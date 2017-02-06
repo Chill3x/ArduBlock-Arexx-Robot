@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#sudo apt-get install arduino -y
+
+mkdir -p ~/sketchbook/tools/ArduBlockTool/tool
+
+cp .ardublock.jar ~/sketchbook/tools/ArduBlockTool/tool/ardublock.jar

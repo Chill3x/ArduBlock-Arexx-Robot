@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cb:CODEBLOCKS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://education.mit.edu/openblocks/ns http://education.mit.edu/openblocks/codeblocks.xsd" xmlns:cb="http://education.mit.edu/openblocks/ns">
+<Pages collapsible-pages="yes" drawer-with-page="yes">
+<Page page-color="128 128 128" page-drawer="Main" page-infullview="yes" page-name="Main" page-width="3360">
+<PageBlocks>
+<Block genus-name="subroutine-ref" id="888">
+<Label>warten5</Label>
+<Location>
+<X>521</X>
+<Y>144</Y>
+</Location>
+</Block>
+<Block genus-name="subroutine-ref" id="499">
+<Label>warten2</Label>
+<Location>
+<X>521</X>
+<Y>95</Y>
+</Location>
+</Block>
+<Block genus-name="subroutine-ref" id="498">
+<Label>warten1</Label>
+<Location>
+<X>520</X>
+<Y>51</Y>
+</Location>
+</Block>
+<Block genus-name="subroutine-ref" id="478">
+<Label>LED2An</Label>
+<Location>
+<X>396</X>
+<Y>55</Y>
+</Location>
+</Block>
+<Block genus-name="subroutine-ref" id="482">
+<Label>LED2Aus</Label>
+<Location>
+<X>393</X>
+<Y>122</Y>
+</Location>
+</Block>
+<Block genus-name="subroutine-ref" id="481">
+<Label>LED1Aus</Label>
+<Location>
+<X>299</X>
+<Y>120</Y>
+</Location>
+</Block>
+<Block genus-name="subroutine-ref" id="419">
+<Label>LED1An</Label>
+<Location>
+<X>300</X>
+<Y>56</Y>
+</Location>
+</Block>
+<Block genus-name="subroutine" id="495">
+<Label>warten5</Label>
+<Location>
+<X>1397</X>
+<Y>499</Y>
+</Location>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="496" connector-kind="socket" connector-type="cmd" init-type="cmd" label="Commands" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="delay" id="496">
+<Location>
+<X>1536</X>
+<Y>507</Y>
+</Location>
+<BeforeBlockId>495</BeforeBlockId>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="497" connector-kind="socket" connector-type="number" init-type="number" label="Millisekunden" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="number" id="497">
+<Label>5000</Label>
+<Location>
+<X>1754</X>
+<Y>510</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="496" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="subroutine" id="492">
+<Label>warten2</Label>
+<Location>
+<X>1397</X>
+<Y>443</Y>
+</Location>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="493" connector-kind="socket" connector-type="cmd" init-type="cmd" label="Commands" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="delay" id="493">
+<Location>
+<X>1536</X>
+<Y>451</Y>
+</Location>
+<BeforeBlockId>492</BeforeBlockId>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="494" connector-kind="socket" connector-type="number" init-type="number" label="Millisekunden" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="number" id="494">
+<Label>2000</Label>
+<Location>
+<X>1754</X>
+<Y>454</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="493" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="subroutine" id="491">
+<Label>warten1</Label>
+<Location>
+<X>1397</X>
+<Y>391</Y>
+</Location>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="487" connector-kind="socket" connector-type="cmd" init-type="cmd" label="Commands" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="delay" id="487">
+<Location>
+<X>1536</X>
+<Y>399</Y>
+</Location>
+<BeforeBlockId>491</BeforeBlockId>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="488" connector-kind="socket" connector-type="number" init-type="number" label="Millisekunden" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="number" id="488">
+<Label>1000</Label>
+<Location>
+<X>1754</X>
+<Y>402</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="487" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="subroutine" id="474">
+<Label>LED2Aus</Label>
+<Location>
+<X>1397</X>
+<Y>316</Y>
+</Location>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="475" connector-kind="socket" connector-type="cmd" init-type="cmd" label="Commands" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="pin-write-digital" id="475">
+<Location>
+<X>1536</X>
+<Y>324</Y>
+</Location>
+<BeforeBlockId>474</BeforeBlockId>
+<Sockets num-sockets="2">
+<BlockConnector con-block-id="476" connector-kind="socket" connector-type="number" init-type="number" label="#" position-type="single"/>
+<BlockConnector con-block-id="477" connector-kind="socket" connector-type="boolean" init-type="boolean" label="" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="digital-low" id="477">
+<Location>
+<X>1742</X>
+<Y>351</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="475" connector-kind="plug" connector-type="boolean" init-type="boolean" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="number" id="476">
+<Label>13</Label>
+<Location>
+<X>1742</X>
+<Y>327</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="475" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="subroutine" id="470">
+<Label>LED2An</Label>
+<Location>
+<X>1396</X>
+<Y>239</Y>
+</Location>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="471" connector-kind="socket" connector-type="cmd" init-type="cmd" label="Commands" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="pin-write-digital" id="471">
+<Location>
+<X>1527</X>
+<Y>247</Y>
+</Location>
+<BeforeBlockId>470</BeforeBlockId>
+<Sockets num-sockets="2">
+<BlockConnector con-block-id="472" connector-kind="socket" connector-type="number" init-type="number" label="#" position-type="single"/>
+<BlockConnector con-block-id="473" connector-kind="socket" connector-type="boolean" init-type="boolean" label="" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="digital-high" id="473">
+<Location>
+<X>1733</X>
+<Y>274</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="471" connector-kind="plug" connector-type="boolean" init-type="boolean" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="number" id="472">
+<Label>13</Label>
+<Location>
+<X>1733</X>
+<Y>250</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="471" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="subroutine" id="466">
+<Label>LED1Aus</Label>
+<Location>
+<X>1396</X>
+<Y>163</Y>
+</Location>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="467" connector-kind="socket" connector-type="cmd" init-type="cmd" label="Commands" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="pin-write-digital" id="467">
+<Location>
+<X>1535</X>
+<Y>171</Y>
+</Location>
+<BeforeBlockId>466</BeforeBlockId>
+<Sockets num-sockets="2">
+<BlockConnector con-block-id="468" connector-kind="socket" connector-type="number" init-type="number" label="#" position-type="single"/>
+<BlockConnector con-block-id="469" connector-kind="socket" connector-type="boolean" init-type="boolean" label="" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="digital-low" id="469">
+<Location>
+<X>1741</X>
+<Y>198</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="467" connector-kind="plug" connector-type="boolean" init-type="boolean" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="number" id="468">
+<Label>8</Label>
+<Location>
+<X>1741</X>
+<Y>174</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="467" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="subroutine" id="462">
+<Label>LED1An</Label>
+<Location>
+<X>1397</X>
+<Y>87</Y>
+</Location>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="463" connector-kind="socket" connector-type="cmd" init-type="cmd" label="Commands" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="pin-write-digital" id="463">
+<Location>
+<X>1528</X>
+<Y>95</Y>
+</Location>
+<BeforeBlockId>462</BeforeBlockId>
+<Sockets num-sockets="2">
+<BlockConnector con-block-id="464" connector-kind="socket" connector-type="number" init-type="number" label="#" position-type="single"/>
+<BlockConnector con-block-id="465" connector-kind="socket" connector-type="boolean" init-type="boolean" label="" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="digital-high" id="465">
+<Location>
+<X>1734</X>
+<Y>122</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="463" connector-kind="plug" connector-type="boolean" init-type="boolean" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="number" id="464">
+<Label>8</Label>
+<Location>
+<X>1734</X>
+<Y>98</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="463" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="program" id="371">
+<Location>
+<X>29</X>
+<Y>67</Y>
+</Location>
+<Comment>
+<Text>Hier kommen deine Befehle rein.
+Alles in der Schleife wird ununterbrochen wiederholt.</Text>
+<Location>
+<X>194</X>
+<Y>27</Y>
+</Location>
+<BoxSize>
+<Width>262</Width>
+<Height>87</Height>
+</BoxSize>
+<Collapsed/>
+</Comment>
+<Sockets num-sockets="2">
+<BlockConnector connector-kind="socket" connector-type="cmd" init-type="cmd" label="Setup" position-type="single"/>
+<BlockConnector connector-kind="socket" connector-type="cmd" init-type="cmd" label="loop" position-type="single"/>
+</Sockets>
+</Block>
+</PageBlocks>
+</Page>
+</Pages>
+</cb:CODEBLOCKS>
