@@ -1,0 +1,24 @@
+Pins:
+  1
+  2
+  3 Motor rechts rückwärts
+  4
+  5 Motor rechts vorwärts
+  6
+  7 rote LED Unterseite
+  8 LED2 (blau)
+  9 Motor links vorwärts
+  10 Motor links rückwärts
+  11
+  12
+  13 LED14 (blau)
+
+Analoge Inputs:
+  A0 Lichtschranke links
+  A1 Lichtschranke rechts
+  A2
+  A3
+  A4
+  A5
+  A6 Phototransistor links
+  A7 Phototransistor rechts
